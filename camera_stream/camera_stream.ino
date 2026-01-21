@@ -29,8 +29,8 @@
 #define PCLK_GPIO_NUM 22
 
 // 2) Your Wi-Fi credentials
-const char* STA_SSID = "*********";
-const char* STA_PWD  = "*********";
+const char* STA_SSID = "BakerStreet";
+const char* STA_PWD  = "Cookie098";
 
 WebServer server(80);
 
