@@ -1,11 +1,3 @@
-/********************************************************************
- *  ESP32-CAM Station + Stable MJPEG Streamer
- *  – Double-buffered QVGA@JPEG
- *  – Nagle OFF, zero TCP buffering
- *  – Yield+delay on each frame
- *  – HTTP in its own task
- ********************************************************************/
-
 #include <esp_camera.h>
 #include <WiFi.h>
 #include <WebServer.h>
