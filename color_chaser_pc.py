@@ -15,7 +15,7 @@ from pynput import keyboard as pyn_kb
 STREAM_URL   = "http://192.168.1.78/stream"
 WRAP_RED     = True
 CENTER_TOL   = 30
-MIN_PIXELS   = 200
+MIN_PIXELS   = 80
 GOAL_PIXELS  = 2000
 TARGET_FPS   = 30.0
 EMA_ALPHA    = 0.1
