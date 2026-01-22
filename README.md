@@ -1,1 +1,3 @@
+![Robot](https://github.com/user-attachments/assets/50947aaa-ea59-4dec-962b-da7ced22c091)
+
 A Wi-Fi-connected mobile robot that autonomously follows a colored target. A camera (ESP32-CAM) streams live MJPEG video to a host that runs a real-time vision pipeline (OpenCV + NumPy). The pipeline thresholds the image in HSV (with hue wrap), filters noise by keeping the largest connected component, computes the blob centroid, and issues movement commands (W/A/D/S) based on blob position. Commands are streamed to the robot directly over UDP to an ESP8266 which drives two L298N motor controller to manage the four motors in a mechanum wheel configuration.
