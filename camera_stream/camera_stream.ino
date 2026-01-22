@@ -20,7 +20,6 @@
 #define HREF_GPIO_NUM 23
 #define PCLK_GPIO_NUM 22
 
-// 2) Your Wi-Fi credentials
 const char* STA_SSID = "BakerStreet";
 const char* STA_PWD  = "Cookie098";
 
@@ -70,7 +69,7 @@ void httpTask(void*) {
   server.begin();
   for (;;) {
     server.handleClient();
-    vTaskDelay(1);  // ~1 ms
+    vTaskDelay(1);
   }
 }
 
