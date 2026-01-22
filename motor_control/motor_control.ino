@@ -1,6 +1,4 @@
-/********************************************************************
- * esp8266 robot car esp-now receiver
- ********************************************************************/
+// esp8266 robot car esp-now receiver
 #include <ESP8266WiFi.h>
 #include <espnow.h>
 #include <user_interface.h>
@@ -85,8 +83,6 @@ void handleCmd(char c) {
     default : stop();         break;
   }
 }
-
-// movement functions (original behavior)
 
 void rotateLeft() {
   digitalWrite(motor1Pin1, HIGH); digitalWrite(motor1Pin2, LOW);
